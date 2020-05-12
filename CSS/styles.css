@@ -1,12 +1,58 @@
+/* reset do css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-image: url('https://image.freepik.com/fotos-gratis/conceito-textured-pintado-colorido-concreto-do-papel-de-parede-da-parede_53876-31799.jpg');
     background-size: auto 100vh;
+    background: url('./img/fundo.jpg');
     font-family: Roboto;
     height: 100vh;
+    font-size: 12px;
+}
+
+
+/*  Se a tela tiver pelo menos 400px irá carregar esses estilos */
+
+@media (min-width: 400px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+
+/*  Se a tela tiver pelo menos 600px irá carregar esses estilos */
+
+@media (min-width: 600px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+
+/*  Se a tela tiver pelo menos 600px irá carregar esses estilos */
+
+@media (min-width: 1200px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+header {
+    display: flex;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu {
     background-color: white;
+    position: fixed;
+    width: 100vw;
+    top: 0;
 }
 
 .menu ul {
@@ -18,6 +64,14 @@ body {
     list-style: none;
 }
 
+.menu a {
+    display: block;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Roboto';
+}
+
 a {
     color: teal;
     text-decoration: none;
@@ -25,6 +79,7 @@ a {
 
 a:hover {
     text-decoration: underline;
+    background-color: powderblue;
 }
 
 .site-subtitle,
@@ -33,6 +88,15 @@ a:hover {
     text-align: center;
 }
 
+.site-title {
+    font-size: 4em;
+}
+
 .site-subtitle {
     font-style: italic;
+}
+
+.img-portfolio {
+    width: 180px;
+    height: 180px;
 }
