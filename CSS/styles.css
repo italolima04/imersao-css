@@ -9,7 +9,11 @@
 body {
     background-size: auto 100vh;
     background: url('./img/fundo.jpg');
+<<<<<<< HEAD
     font-family: Roboto;
+=======
+    font-family: 'Source Code Pro', monospace;
+>>>>>>> 30cfa4d... Aula04
     height: 100vh;
     font-size: 12px;
 }
@@ -53,6 +57,10 @@ header {
     position: fixed;
     width: 100vw;
     top: 0;
+<<<<<<< HEAD
+=======
+    z-index: 1;
+>>>>>>> 30cfa4d... Aula04
 }
 
 .menu ul {
@@ -69,7 +77,17 @@ header {
     padding: 10px 20px;
     font-size: 18px;
     font-weight: bold;
+<<<<<<< HEAD
     font-family: 'Roboto';
+=======
+    transition: background-color 1s, color 1s;
+}
+
+.menu a:active,
+.menu a:hover {
+    background-color: teal;
+    color: whitesmoke;
+>>>>>>> 30cfa4d... Aula04
 }
 
 a {
@@ -79,7 +97,23 @@ a {
 
 a:hover {
     text-decoration: underline;
+<<<<<<< HEAD
     background-color: powderblue;
+=======
+}
+
+.titulo {
+    transform: scale(0.2) translateY(50vh);
+    opacity: 0;
+    animation: linear 2s animacaoTitulo forwards;
+}
+
+@keyframes animacaoTitulo {
+    100% {
+        transform: scale(1) translateY(0);
+        opacity: 1;
+    }
+>>>>>>> 30cfa4d... Aula04
 }
 
 .site-subtitle,
@@ -89,14 +123,96 @@ a:hover {
 }
 
 .site-title {
+<<<<<<< HEAD
+=======
+    font-family: 'Roboto Condensed', sans-serif;
+>>>>>>> 30cfa4d... Aula04
     font-size: 4em;
 }
 
 .site-subtitle {
     font-style: italic;
+<<<<<<< HEAD
 }
 
 .img-portfolio {
     width: 180px;
     height: 180px;
+=======
+    font-family: 'Press Start 2P', cursive;
+    line-height: 1.9em;
+}
+
+.portfolio,
+.contato {
+    padding: 2em;
+    min-height: 100vh;
+}
+
+.portfolio h2,
+.contato h2 {
+    margin-bottom: 0.8em;
+    font-size: 2.7em;
+    color: whitesmoke
+}
+
+.portfolio .grid {
+    display: grid;
+    gap: 1.8em;
+}
+
+@media (min-width:560px) {
+    .portfolio .grid {
+        grid-template-columns: repeat(2, 240px);
+    }
+}
+
+@media (min-width:880px) {
+    .portfolio .grid {
+        grid-template-columns: repeat(3, 260px);
+        align-content: center;
+        justify-content: center;
+        height: calc(100vh -8em -48px);
+    }
+}
+
+.portfolio figure {
+    text-align: center;
+}
+
+.img-portfolio {
+    width: 240px;
+    height: 180px;
+    object-fit: cover;
+    object-position: left bottom;
+    border-radius: 4px;
+    transition: transform 500ms;
+}
+
+.img-portfolio:hover {
+    transform: scale(1.2);
+}
+
+@media (min-width: 1200px) {
+    .img-portfolio {
+        width: 100%;
+        height: 200px;
+    }
+}
+
+.contato a {
+    color: whitesmoke;
+    font-size: 6em;
+    transition: text-shadow 0.5s;
+}
+
+.contato .icons {
+    text-align: center;
+}
+
+.contato a:active,
+.contato a:hover {
+    text-decoration: none;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
+>>>>>>> 30cfa4d... Aula04
 }
