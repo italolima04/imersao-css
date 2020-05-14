@@ -8,7 +8,7 @@
 
 body {
     background-size: auto 100vh;
-    background: url('./img/fundo.jpg');
+    background: url('../img//fundo.jpg');
     font-family: Roboto;
     font-family: 'Source Code Pro', monospace;
     height: 100vh;
@@ -88,7 +88,6 @@ a {
 
 a:hover {
     text-decoration: underline;
-    background-color: powderblue;
 }
 
 .titulo {
