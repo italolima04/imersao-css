@@ -9,11 +9,8 @@
 body {
     background-size: auto 100vh;
     background: url('./img/fundo.jpg');
-<<<<<<< HEAD
     font-family: Roboto;
-=======
     font-family: 'Source Code Pro', monospace;
->>>>>>> 30cfa4d... Aula04
     height: 100vh;
     font-size: 12px;
 }
@@ -57,10 +54,7 @@ header {
     position: fixed;
     width: 100vw;
     top: 0;
-<<<<<<< HEAD
-=======
     z-index: 1;
->>>>>>> 30cfa4d... Aula04
 }
 
 .menu ul {
@@ -77,9 +71,7 @@ header {
     padding: 10px 20px;
     font-size: 18px;
     font-weight: bold;
-<<<<<<< HEAD
     font-family: 'Roboto';
-=======
     transition: background-color 1s, color 1s;
 }
 
@@ -87,7 +79,6 @@ header {
 .menu a:hover {
     background-color: teal;
     color: whitesmoke;
->>>>>>> 30cfa4d... Aula04
 }
 
 a {
@@ -97,9 +88,7 @@ a {
 
 a:hover {
     text-decoration: underline;
-<<<<<<< HEAD
     background-color: powderblue;
-=======
 }
 
 .titulo {
@@ -113,7 +102,6 @@ a:hover {
         transform: scale(1) translateY(0);
         opacity: 1;
     }
->>>>>>> 30cfa4d... Aula04
 }
 
 .site-subtitle,
@@ -123,22 +111,17 @@ a:hover {
 }
 
 .site-title {
-<<<<<<< HEAD
-=======
     font-family: 'Roboto Condensed', sans-serif;
->>>>>>> 30cfa4d... Aula04
     font-size: 4em;
 }
 
 .site-subtitle {
     font-style: italic;
-<<<<<<< HEAD
 }
 
 .img-portfolio {
     width: 180px;
     height: 180px;
-=======
     font-family: 'Press Start 2P', cursive;
     line-height: 1.9em;
 }
@@ -214,5 +197,4 @@ a:hover {
 .contato a:hover {
     text-decoration: none;
     text-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
->>>>>>> 30cfa4d... Aula04
 }
