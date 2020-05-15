@@ -8,7 +8,7 @@
 
 body {
     background-size: auto 100vh;
-    background: url('../img//fundo.jpg');
+    background: url('./img/fundo.jpg');
     font-family: Roboto;
     font-family: 'Source Code Pro', monospace;
     height: 100vh;
@@ -116,26 +116,64 @@ a:hover {
 
 .site-subtitle {
     font-style: italic;
+    font-family: 'Press Start 2P', cursive;
+    line-height: 2.2em;
 }
 
 .img-portfolio {
     width: 180px;
     height: 180px;
-    font-family: 'Press Start 2P', cursive;
-    line-height: 1.9em;
 }
 
+.sobre,
 .portfolio,
 .contato {
     padding: 2em;
     min-height: 100vh;
 }
 
+@media (min-width: 1200px) {
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1200px;
+    }
+}
+
+.sobre h2,
 .portfolio h2,
 .contato h2 {
-    margin-bottom: 0.8em;
+    color: whitesmoke;
     font-size: 2.7em;
-    color: whitesmoke
+    margin-bottom: 1em;
+    margin-top: 0.6em;
+}
+
+.sobre p {
+    margin-top: 1.2em;
+    color: white;
+    text-indent: 1.4em;
+    text-align: justify;
+}
+
+.sobre a {
+    color: cyan;
+}
+
+.sobre figure img {
+    width: 410px;
+    height: 410px;
+    border-radius: 50%
+}
+
+.sobre .avatar {
+    margin-left: 2em;
+}
+
+@media (min-width:600px) {
+    .sobre .avatar {
+        float: right;
+    }
 }
 
 .portfolio .grid {
@@ -182,9 +220,10 @@ a:hover {
     }
 }
 
-.contato a {
+.contato .grid a {
     color: whitesmoke;
     font-size: 6em;
+    padding-right: 30px;
     transition: text-shadow 0.5s;
 }
 
@@ -196,4 +235,21 @@ a:hover {
 .contato a:hover {
     text-decoration: none;
     text-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
+}
+
+.contato p {
+    font-size: 1.2em;
+    margin-top: 9em;
+    color: white;
+    text-indent: 1.4em;
+    text-align: center;
+}
+
+.contato p a {
+    color: cyan;
+}
+
+.contato h4 {
+    margin-top: 0.6em;
+    text-align: center;
 }
